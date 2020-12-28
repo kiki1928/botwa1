@@ -108,7 +108,7 @@ module.exports = msgHandler = async (client, message,rugaapi) => {
             if (obj === true){
                 return false
             } else {     
-                return client.reply(from, `Kamu belum terdaftar sebagai Teman Rizky Bot\nuntuk mendaftar kirim !daftar |nama|umur\n\ncontoh format: !daftar |Rizky|20\n\ncukup gunakan nama depan/panggilan saja`, id) //if user is not registered
+                return client.reply(from, `Kamu belum terdaftar sebagai Teman MAULHDC Bot\nuntuk mendaftar kirim !daftar |nama|umur\n\ncontoh format: !daftar |maul|20\n\ncukup gunakan nama depan/panggilan saja`, id) //if user is not registered
             }
         }
 
@@ -116,7 +116,7 @@ module.exports = msgHandler = async (client, message,rugaapi) => {
             if (obj === true){
                 return false
             } else {
-                return client.reply(from, `Kamu belum cukup umur untuk menggunakan Rizky Bot, min 16 tahun\n\nKamu bisa mendaftar ulang dengan cara donasi terlebih dahulu, bales !donasi\nHubungi Owner : wa.me/6288292030664`, id) //if user is not registered
+                return client.reply(from, `Kamu belum cukup umur untuk menggunakan MAULHDC Bot, min 16 tahun\n\nKamu bisa mendaftar ulang dengan cara donasi terlebih dahulu, bales !donasi\nHubungi Owner : wa.me/6281212497030`, id) //if user is not registered
             }
         }
 function monospace(string) {
@@ -206,8 +206,8 @@ function GenerateSerialNumber(mask) {
       			'Haikk',
       			'aree Kau Dari mana',
       			'Mine Mine',
-      			'Ada apa kak Panggil Rizky Bot!',
-      			'Masih Rizky Bot liatin'
+      			'Ada apa kak Panggil MAULHDC Bot!',
+      			'Masih MAULHDC Bot liatin'
       			]
       const rate = [
 
@@ -258,7 +258,7 @@ function GenerateSerialNumber(mask) {
         const isBotGroupAdmins = isGroupMsg ? groupAdmins.includes(botNumber + '@c.us') : false
         let { pushname, verifiedName, formattedName } = sender
         pushname = pushname || verifiedName || formattedName
-        const ownerNumber = ["6288292030664@c.us"] // replace with your whatsapp number
+        const ownerNumber = ["6281212497030@c.us"] // replace with your whatsapp number
         const isOwner = ownerNumber.includes(sender.id)
         const SN = GenerateSerialNumber("000000000000000000000000")
         const isBanned = banned.includes(sender.id)
@@ -539,19 +539,19 @@ function GenerateSerialNumber(mask) {
                 await client.sendText(from, `Logs : ${logs}` + '.')
             break
             case '!setname':
-            if (!isOwner) return client.reply(from, `Perintah ini hanya bisa di gunakan oleh Owner Rizky Bot!`, id)
+            if (!isOwner) return client.reply(from, `Perintah ini hanya bisa di gunakan oleh Owner MAULHDC Bot!`, id)
                 const setnem = body.slice(9)
                 await client.setMyName(setnem)
                 client.sendTextWithMentions(from, `Makasih Nama Barunya @${sender.id.replace('@c.us','')} 😘`)
             break
         case '!setstatus':
-            if (!isOwner) return client.reply(from, `Perintah ini hanya bisa di gunakan oleh Owner Rizky Bot!`, id)
+            if (!isOwner) return client.reply(from, `Perintah ini hanya bisa di gunakan oleh Owner MAULHDC Bot!`, id)
                 const setstat = body.slice(11)
                 await client.setMyStatus(setstat)
                 client.sendTextWithMentions(from, `Makasih Status Barunya @${sender.id.replace('@c.us','')} 😘`)
             break
         case '!setprofilepic':
-            if (!isOwner) return client.reply(from, `Perintah ini hanya bisa di gunakan oleh Owner Rizky Bot!`, id)
+            if (!isOwner) return client.reply(from, `Perintah ini hanya bisa di gunakan oleh Owner MAULHDC Bot!`, id)
             if (isMedia) {
                 const mediaData = await decryptMedia(message)
                 const imageBase64 = `data:${mimetype};base64,${mediaData.toString('base64')}`
@@ -913,7 +913,7 @@ try {
 ╠═════════════════════
 ║ ║▌│█║▌│ █║▌│█│║▌║
 ║ ║▌│█║▌│ █║▌│█│║▌║
-║    [Rizky Bot]©
+║    [MAULHDC Bot]©
 ║ JANGAN LUPA DONATE YAHH
 ╚═════════════════════`)
                     const hasil = mentah.canReceiveMessage ? msg : false
@@ -2575,7 +2575,7 @@ Total Pengguna yang telah terdaftar ${pendaftar.length}`)
             default:
             if (!isGroupMsg) return client.reply(from, `Halooo👏 *${pushname}* Jingan\nPengen masukin bot ke grub?\nSyarat&ketentuan nya\n-wajib follow ig @ff.rizkygans1(SS+Kirim ke onwer Rizky Bot) jika sudah bot akan masuk\n-Bot harus Admin\n-jangan menghina bot\n-jangan spam berlebihan\n-join grub Rizky Bot:https://chat.whatsapp.com/Jwb64Puw1cgErIqWNP65LN\n*Thank udah udah menggunakan bot ini*`, id)
             if (command.startsWith('!')) {
-                client.reply(from, `Lu ngetik apaan ${pushname}, jingan Command lu *${args[0]}* yang ga berfaedah Tidak Terdaftar Di Dalam *!help*`, id)
+                client.reply(from, `Lu ngetik apaan ${pushname}, bajingan Command lu *${args[0]}* yang ga berfaedah Tidak Terdaftar Di Dalam *!help*`, id)
             }
             await client.sendSeen(from) 
             }
