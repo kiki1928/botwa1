@@ -108,7 +108,7 @@ module.exports = msgHandler = async (client, message,rugaapi) => {
             if (obj === true){
                 return false
             } else {     
-                return client.reply(from, `Kamu belum terdaftar sebagai Teman MAULHDC Bot\nuntuk mendaftar kirim !daftar |nama|umur\n\ncontoh format: !daftar |maul|20\n\ncukup gunakan nama depan/panggilan saja`, id) //if user is not registered
+                return client.reply(from, `Kamu belum terdaftar sebagai Teman Rizky Bot\nuntuk mendaftar kirim !daftar |nama|umur\n\ncontoh format: !daftar |Rizky|20\n\ncukup gunakan nama depan/panggilan saja`, id) //if user is not registered
             }
         }
 
@@ -116,7 +116,7 @@ module.exports = msgHandler = async (client, message,rugaapi) => {
             if (obj === true){
                 return false
             } else {
-                return client.reply(from, `Kamu belum cukup umur untuk menggunakan MAULHDC Bot, min 16 tahun\n\nKamu bisa mendaftar ulang dengan cara donasi terlebih dahulu, bales !donasi\nHubungi Owner : wa.me/6281212497030`, id) //if user is not registered
+                return client.reply(from, `Kamu belum cukup umur untuk menggunakan Rizky Bot, min 16 tahun\n\nKamu bisa mendaftar ulang dengan cara donasi terlebih dahulu, bales !donasi\nHubungi Owner : wa.me/6281212497030`, id) //if user is not registered
             }
         }
 function monospace(string) {
@@ -258,7 +258,7 @@ function GenerateSerialNumber(mask) {
         const isBotGroupAdmins = isGroupMsg ? groupAdmins.includes(botNumber + '@c.us') : false
         let { pushname, verifiedName, formattedName } = sender
         pushname = pushname || verifiedName || formattedName
-        const ownerNumber = ["6281212497030@c.us"] // replace with your whatsapp number
+        const ownerNumber = ["6288292030664@c.us"] // replace with your whatsapp number
         const isOwner = ownerNumber.includes(sender.id)
         const SN = GenerateSerialNumber("000000000000000000000000")
         const isBanned = banned.includes(sender.id)
@@ -913,7 +913,7 @@ try {
 ╠═════════════════════
 ║ ║▌│█║▌│ █║▌│█│║▌║
 ║ ║▌│█║▌│ █║▌│█│║▌║
-║    [MAULHDC Bot]©
+║    [Rizky Bot]©
 ║ JANGAN LUPA DONATE YAHH
 ╚═════════════════════`)
                     const hasil = mentah.canReceiveMessage ? msg : false
